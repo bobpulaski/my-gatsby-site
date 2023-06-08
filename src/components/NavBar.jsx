@@ -9,12 +9,14 @@ function NavBar() {
   return (
     <Navbar expand="lg" bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand href="#home">Sequoia Parser</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/">
+          Sequoia Parser
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link as={Link} to="/">
-              Home
+          <Nav.Link as={Link} to="/docs">
+              Docs
             </Nav.Link>
             <Nav.Link as={Link} to="/about">
               About
