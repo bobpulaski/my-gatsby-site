@@ -1,13 +1,15 @@
 import * as React from "react";
 
 import Layout from "../components/layout";
+import MainBanner from "../components/MainBanner";
+
 import dictionary from "../i18/dictionary";
 
 const IndexPage = () => {
   return (
     <>
       <Layout>
-        <h1>{dictionary().Titles._MainPage[process.env.GATSBY_LANG]}</h1>
+        <MainBanner />
       </Layout>
     </>
   );

@@ -6,7 +6,10 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 
-module.exports = {
+module
+
+
+	.exports = {
   siteMetadata: {
     siteUrl: `https://www.yourdomain.tld`,
   },

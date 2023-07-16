@@ -5,6 +5,8 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
+import { GoProjectRoadmap } from "react-icons/go";
+
 import dictionary from "../i18/dictionary";
 
 function NavBar() {
@@ -12,11 +14,12 @@ function NavBar() {
     <Navbar expand="lg" bg="dark" variant="dark">
       <Container>
         <Navbar.Brand as={Link} to="/">
-          Sequoia Parser
+          <GoProjectRoadmap className="mx-2" />
+          Pageover
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="ms-start">
             <Nav.Link as={Link} to="/docs">
               {dictionary().NavBar._Docs[process.env.GATSBY_LANG]}
             </Nav.Link>
