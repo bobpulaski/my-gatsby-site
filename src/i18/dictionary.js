@@ -9,6 +9,9 @@ function dictionary() {
       _AboutPage: { en: "About page", ru: "О нас" },
       _DocsPage: { en: "Docs page", ru: "Справка" },
     },
+    Words: {
+      _DownLoadForFree: {en: "Free download", ru: "Скачать бесплатно"}
+    },
   };
 }
 
