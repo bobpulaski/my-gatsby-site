@@ -4,7 +4,6 @@ import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
 
-
 import dictionary from "../i18/dictionary";
 
 export default function MainBanner() {
@@ -21,7 +20,7 @@ export default function MainBanner() {
               src="https://dummyimage.com/300x200/d6d6d6/000000.jpg&text=logo"
               rounded
             />
-            <h1 className="my-5">Парсить сайты стало намного проще</h1>
+            <h1 className="my-2">Парсить сайты стало намного проще</h1>
             <h2 className="mb-5">
               Парсите содержимое сайтов в данные. Запускайте парсеры на вашем
               компьютере
