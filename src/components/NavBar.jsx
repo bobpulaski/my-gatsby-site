@@ -7,7 +7,6 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
-import { GoProjectRoadmap } from "react-icons/go";
 import { MdOutlineLanguage } from "react-icons/md";
 
 import dictionary from "../i18/dictionary";
@@ -17,10 +16,12 @@ function NavBar() {
     <Navbar expand="lg" bg="dark" variant="dark">
       <Container>
         <Navbar.Brand as={Link} to="/">
-          <h5 className="mt-2">
-            <GoProjectRoadmap className="mx-2 mb-1" />
-            Pageover
-          </h5>
+          <img
+            src={"/logo.png"}
+            className="d-inline-block align-top me-2"
+            alt="Logo"
+          />
+          Pageover
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
