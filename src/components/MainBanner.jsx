@@ -9,15 +9,12 @@ import dictionary from "../i18/dictionary";
 export default function MainBanner() {
   return (
     <>
-      <Container fluid className="bg-info">
+      <Container fluid className="">
         <Container className="p-2">
           <div className="d-flex flex-column justify-content-center align-items-center">
-            <h6 className="text-danger">
-              {/* {dictionary().Titles._MainPage[process.env.GATSBY_LANG]} */}
-              Main banner
-            </h6>
             <Image
-              src="https://dummyimage.com/300x200/d6d6d6/000000.jpg&text=logo"
+              className="my-5"
+              src={"/pageover_big_logo_300.png"}
               rounded
             />
             <h1 className="my-2">Парсить сайты стало намного проще</h1>
