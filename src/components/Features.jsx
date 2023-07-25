@@ -6,10 +6,7 @@ import { BiAnalyse, BiAlbum, BiBeenHere } from "react-icons/bi";
 export default function Features() {
   return (
     <>
-      <Container className="p-2">
-        <div className="d-flex flex-column justify-content-center align-items-center">
-          <h6 className="text-danger">Features</h6>
-        </div>
+      <Container style={{ marginBottom: "6rem" }}>
         <div className="row gx-5">
           <div className="col">
             <Card border="light">

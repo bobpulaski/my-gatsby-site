@@ -1,3 +1,13 @@
 // $primary: #7e9933;
-// $dark: #7e9933;
+$dark: #3D4356;
+// $warning: #879301;
+// $dark: #1A2E53;
 @import "~bootstrap/scss/bootstrap";
+
+p {
+  font-size: 115%;
+}
+
+footer {
+  padding: 1rem;
+}

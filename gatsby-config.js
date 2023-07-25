@@ -6,12 +6,9 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 
-module
-
-
-	.exports = {
+module.exports = {
   siteMetadata: {
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://www.pageover.ru`,
   },
   plugins: [`gatsby-plugin-sass`],
 };

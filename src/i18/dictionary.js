@@ -10,7 +10,7 @@ function dictionary() {
       _DocsPage: { en: "Docs page", ru: "Документация" },
     },
     Words: {
-      _DownLoadForFree: { en: "Free download", ru: "Скачать бесплатно" },
+      _DownLoadForFree: { en: "Free download", ru: "Скачать" },
     },
   };
 }

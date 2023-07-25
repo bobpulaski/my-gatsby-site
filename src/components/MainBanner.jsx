@@ -3,14 +3,15 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
+import { SiWindows } from "react-icons/si";
 
 import dictionary from "../i18/dictionary";
 
 export default function MainBanner() {
   return (
     <>
-      <Container fluid className="">
-        <Container className="p-2">
+      <Container fluid style={{ marginBottom: "6rem" }}>
+        <Container>
           <div className="d-flex flex-column justify-content-center align-items-center">
             <Image
               className="my-5"
@@ -22,8 +23,9 @@ export default function MainBanner() {
               Парсите содержимое сайтов в данные. Запускайте парсеры на вашем
               компьютере
             </h2>
-            <Button className="mb-5 display-5" variant="warning">
+            <Button variant="dark" className="px-4 pt-3">
               <h4>
+                <SiWindows className="me-3 mb-1" />
                 {dictionary().Words._DownLoadForFree[process.env.GATSBY_LANG]}
               </h4>
             </Button>

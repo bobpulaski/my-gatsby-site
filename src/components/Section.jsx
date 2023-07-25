@@ -1,23 +1,20 @@
 import React from "react";
-
 import Container from "react-bootstrap/Container";
 
-function Section() {
+function Section(props) {
+  const { header, text } = props; // Деструктурируем props для более читаемого кода
+
   return (
-    <>
-      <Container className="mt-6">
+    <Container fluid style={{ marginBottom: "6rem" }}>
+      <Container className="col-6">
         <div className="d-flex flex-column justify-content-center align-items-center">
-          <h6 className="text-danger">Section</h6>
-          <h3 className="display-5 fw-bold">
-            <strong>Desktop development made easy</strong>
+          <h3 className="display-5 fw-bold text-center">
+            <strong>{header}</strong>
           </h3>
-          <p>
-            Electron takes care of the hard parts so you can focus on the core
-            of your application.
-          </p>
+          <p className="text-center">{text}</p>
         </div>
       </Container>
-    </>
+    </Container>
   );
 }
 
