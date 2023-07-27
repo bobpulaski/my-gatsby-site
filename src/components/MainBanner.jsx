@@ -18,15 +18,21 @@ export default function MainBanner() {
               src={"/pageover_big_logo_300.png"}
               rounded
             />
-            <h1 className="my-2">Парсить сайты стало намного проще</h1>
-            <h2 className="mb-5">
-              Парсите содержимое сайтов в данные. Запускайте парсеры на вашем
-              компьютере
+            <h1 className="my-2 text-center">Программа для парсинга сайтов</h1>
+            <h2 className="mb-5 text-center">
+              Парсите содержимое сайтов в данные
             </h2>
-            <Button variant="dark" className="px-4 pt-3">
+            <Button
+              variant="dark"
+              className="px-4 pt-3 position-relative"
+              title="Загрузить парсер сайтов для Windows бесплатно"
+            >
               <h4>
                 <SiWindows className="me-3 mb-1" />
                 {dictionary().Words._DownLoadForFree[process.env.GATSBY_LANG]}
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
+                  Windows (64-bit)
+                </span>
               </h4>
             </Button>
           </div>

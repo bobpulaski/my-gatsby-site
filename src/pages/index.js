@@ -6,7 +6,6 @@ import Features from "../components/Features";
 import Section from "../components/Section";
 import Block2Parts from "../components/Block2Parts";
 
-import dictionary from "../i18/dictionary";
 import Footer from "../components/Footer";
 
 const IndexPage = () => {
@@ -16,49 +15,36 @@ const IndexPage = () => {
         <MainBanner />
         <Features />
         <Section
-          header="Desktop development made easy"
-          text="Electron takes care of the hard parts so you can focus on the core
-              of your application."
+          header="Парсите сайты просто и быстро"
+          text="Приложение Pageover разработано для извлечения данных веб-страниц с последующим сохранением результата в формат csv."
         />
 
         <Block2Parts
           order="text-left"
-          header="Native graphical user interfaces"
-          text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-            ducimus in numquam, delectus vel quo corporis sapiente perspiciatis
-            autem ea debitis rerum, id nemo laudantium mollitia animi, magnam
-            ipsa beatae? vel quo corporis sapiente perspiciatis
-            autem ea debitis rerum, id nemo laudantium mollitia animi, magnam
-            ipsa beatae? lorem"
-          image="https://fakeimg.pl/400x300/"
+          header="Неограниченное количество проектов"
+          text="С нашим парсером, вы сможете легко настраивать проекты для сбора данных с различных источников – от веб-страниц и онлайн-магазинов до новостных порталов и социальных сетей. Все, что вам нужно – это указать нужные параметры, и парсер возьмет на себя тяжелую работу, чтобы предоставить вам всю необходимую информацию."
+          image="/400-300.jpg"
         />
+
         <Block2Parts
           order="text-right"
-          header="Automatic software updates"
-          text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-            ducimus in numquam, delectus vel quo corporis sapiente perspiciatis
-            autem ea debitis rerum, id nemo laudantium mollitia animi, magnam
-            ipsa beatae? vel quo corporis sapiente perspiciatis
-            autem ea debitis rerum, id nemo laudantium mollitia animi, magnam
-            ipsa beatae? lorem"
-          image="https://fakeimg.pl/400x300/?text=Hello 400/300"
+          header="Простой удобный интерфейс"
+          text="Pageover предоставляет Вам удобный интуитивный интерфейс. Вам достаточно создать проект, которых может быть несколько, указать логические группы парсинга контента (извлечение данных из HTML и XML документов), затем просто добавить к каждой группе неограниченное число ссылок на необходимые страницы и настроить правила анализа html-страниц."
+          image="https://fakeimg.pl/400x300/"
         />
+
         <Block2Parts
           order="text-left"
-          header="App store distribution"
-          text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-            ducimus in numquam, delectus vel quo corporis sapiente perspiciatis
-            autem ea debitis rerum, id nemo laudantium mollitia animi, magnam
-            ipsa beatae? vel quo corporis sapiente perspiciatis
-            autem ea debitis rerum, id nemo laudantium mollitia animi, magnam
-            ipsa beatae? lorem"
+          header="Гибкие настройки парсера"
+          text="Настраивайте правила анализа кода страницы, исходя из ваших предпочтений и результата рендера страницы конкретного ресурса: текстовый анализ (bitween), анализ на основе элементов DOM или используйте регулярные выражения."
           image="https://fakeimg.pl/400x300/"
         />
 
         <Section
-          header="Use the tools you love"
-          text="With the power of modern Chromium, Electron gives you an unopinionated blank slate to build your app. Choose to integrate your favourite libraries and frameworks from the front-end ecosystem, or carve your own path with bespoke HTML code."
+          header="Экспорт результатов в один клик"
+          text="Сохранив результаты парсинга в csv-файл, вы можете работать с ними как с обычной таблицей в любом табличном редакторе, и конечно же, использовать в качестве данных для импорта."
         />
+
         <Footer />
       </Layout>
     </>
@@ -68,5 +54,5 @@ const IndexPage = () => {
 export default IndexPage;
 
 export const Head = () => (
-  <title>Pageover - программа для парсинга сайтов</title>
+  <title>Pageover - Приложение для парсинга открытых данных веб-сайтов</title>
 );
