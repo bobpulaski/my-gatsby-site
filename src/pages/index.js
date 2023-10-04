@@ -1,12 +1,10 @@
 import * as React from "react";
 
-import Layout from "../components/layout";
+import Layout from "../components/layouts/Layout";
 import MainBanner from "../components/MainBanner";
 import Features from "../components/Features";
 import Section from "../components/Section";
 import Block2Parts from "../components/Block2Parts";
-
-import Footer from "../components/Footer";
 
 const IndexPage = () => {
   return (
@@ -44,8 +42,6 @@ const IndexPage = () => {
           header="Экспорт результатов в один клик"
           text="Сохранив результаты парсинга в csv-файл, вы можете работать с ними как с обычной таблицей в любом табличном редакторе, и конечно же, использовать в качестве данных для импорта."
         />
-
-        <Footer />
       </Layout>
     </>
   );

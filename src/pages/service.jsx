@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../components/layout";
+import Layout from "../components/layouts/Layout";
 import dictionary from "../i18/dictionary";
 
 function service() {
