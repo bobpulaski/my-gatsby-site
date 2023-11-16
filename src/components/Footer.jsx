@@ -7,8 +7,8 @@ function Footer() {
       <Container>
         <footer className="d-flex flex-column justify-content-center align-items-center ">
           <p className="fw-lighter">
-            Скачайте парсер <strong>Pageover</strong> и откройте для себя
-            удобные возможности сбора данных уже сегодня!
+            Скачайте парсер <strong>Pageover</strong> и используйте
+            удобные возможности сбора данных.
           </p>
           <p className="text-secondary">
             Copyright © {new Date().getFullYear()} Pageover.

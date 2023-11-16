@@ -29,11 +29,11 @@ function NavBar() {
             <Nav.Link as={Link} to="/docs/overview">
               {dictionary().NavBar._Docs[process.env.GATSBY_LANG]}
             </Nav.Link>
-            <Nav.Link as={Link} to="/service">
+            {/* <Nav.Link as={Link} to="/service">
               {dictionary().NavBar._Service[process.env.GATSBY_LANG]}
-            </Nav.Link>
+            </Nav.Link> */}
           </Nav>
-          <Nav>
+          {/* <Nav>
             <NavDropdown
               title={
                 <span>
@@ -46,7 +46,7 @@ function NavBar() {
             >
               <NavDropdown.Item href="#action3">English</NavDropdown.Item>
             </NavDropdown>
-          </Nav>
+          </Nav> */}
         </Navbar.Collapse>
       </Container>
     </Navbar>

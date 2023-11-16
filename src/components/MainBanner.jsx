@@ -8,6 +8,10 @@ import { SiWindows } from "react-icons/si";
 import dictionary from "../i18/dictionary";
 
 export default function MainBanner() {
+  function download() {
+    console.log("Была нажата ссылка.");
+  }
+
   return (
     <>
       <Container fluid style={{ marginBottom: "6rem" }}>
@@ -22,16 +26,25 @@ export default function MainBanner() {
             <h2 className="mb-5 text-center">
               Парсите содержимое сайтов в данные
             </h2>
+
+            <a href="400-300.jpg" download>
+              Download the directly imported file
+            </a>
+            {` `}
+
             <Button
               variant="dark"
+              type="submit"
               className="px-4 pt-3 position-relative"
-              title="Загрузить парсер сайтов для Windows бесплатно"
+              title="Скачать парсер сайтов для Windows бесплатно"
+              onClick={download}
+              href="scale_1200.zip"
             >
               <h4>
                 <SiWindows className="me-3 mb-1" />
                 {dictionary().Words._DownLoadForFree[process.env.GATSBY_LANG]}
                 <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
-                  Windows (64-bit)
+                  beta
                 </span>
               </h4>
             </Button>

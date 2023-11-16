@@ -1,7 +1,7 @@
 function dictionary() {
   return {
     NavBar: {
-      _Docs: { en: "Docs", ru: "Документация" },
+      _Docs: { en: "Docs", ru: "Справка" },
       _Service: { en: "Services", ru: "Услуги" },
     },
     Titles: {

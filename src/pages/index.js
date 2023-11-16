@@ -5,6 +5,7 @@ import MainBanner from "../components/MainBanner";
 import Features from "../components/Features";
 import Section from "../components/Section";
 import Block2Parts from "../components/Block2Parts";
+import { Container } from "react-bootstrap";
 
 const IndexPage = () => {
   return (
@@ -42,6 +43,19 @@ const IndexPage = () => {
           header="Экспорт результатов в один клик"
           text="Сохранив результаты парсинга в csv-файл, вы можете работать с ними как с обычной таблицей в любом табличном редакторе, и конечно же, использовать в качестве данных для импорта."
         />
+        <Container style={{ marginBottom: "6rem" }}>
+          <div
+            className="d-flex flex-column rounded"
+            style={{ background: "#e9ecef", fontSize: "12px" }}
+          >
+            <p className="fw-lighter text-center p-3">
+              В настоящее время приложение находится в стадии тестирования и
+              может содержать ошибки. Мы работаем над его усовершенствованием.
+              Будем признательны за обратную связь, указание на ошибки,
+              предложения по функционалу. Следите за обновлениями.
+            </p>
+          </div>
+        </Container>
       </Layout>
     </>
   );
